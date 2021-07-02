@@ -5,11 +5,11 @@
 #include "bubble/bubble.h"
 #include "bucket/bucket.h"
 #include "comb/comb.h"
-/*
 #include "counting/counting.h"
-#include "heap/heap.h"
+//#include "heap/heap.h"
 #include "insertion/insertion.h"
 #include "merge/merge.h"
+/*
 #include "quick/quick.h"
 #include "radix/radix.h"
 #include "selection/selection.h"
@@ -79,6 +79,28 @@ int main()
 				"counting", "heap", "insertion", 
 				"merge", "quick", "radix", 
 				"selection", "shell"	};
+	
+	cout << "\n\n";
+
+	for (int i = 0; i < 11; i++)
+	{
+		if (i < 9)
+		{
+			cout << i + 1;
+			cout << ".  ";
+			cout << algos[i] << endl;
+		}
+
+		else
+		{
+			cout << i + 1;
+			cout << ". ";
+			cout << algos[i] << endl;
+		}
+	}
+
+	cout << "\n";
+
 	int algo;
 	cout << "\n\nwhich algorithm would you like to use?";
 	cout << "\nalgorithm: ";
@@ -99,19 +121,19 @@ int main()
 		case 3:
 			comb(arr, array_length);
 			break;
-		/*
-		case "counting":
+		case 4:
 			counting(arr, array_length);
 			break;
-		case "heap":
-			heap(arr, array_length);
-			break;
-		case "insertion":
+		//case 5:
+		//	heap(arr, array_length);
+		//	break;
+		case 6:
 			insertion(arr, array_length);
 			break;
-		case "merge":
-			merge(arr, array_length);
+		case 7:
+			merge_sort(arr, 0,  array_length);
 			break;
+		/*
 		case "quick":
 			quick(arr, array_length);
 			break;
