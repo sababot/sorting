@@ -9,11 +9,9 @@
 //#include "heap/heap.h"
 #include "insertion/insertion.h"
 #include "merge/merge.h"
-/*
 #include "quick/quick.h"
 #include "radix/radix.h"
 #include "selection/selection.h"
-*/
 
 using namespace std;
 
@@ -133,17 +131,15 @@ int main()
 		case 7:
 			merge_sort(arr, 0,  array_length);
 			break;
-		/*
-		case "quick":
-			quick(arr, array_length);
+		case 8:
+			quick_sort(arr, 0, array_length);
 			break;
-		case "radix":
-			radix(arr, array_length);
+		case 9:
+			radix_sort(arr, array_length);
 			break;
-		case "selection":
-			selection(arr, array_length);
+		case 10:
+			selection_sort(arr, array_length);
 			break;
-		*/
 		default:
 			cout << "fatal error: out of range";
 			break;
