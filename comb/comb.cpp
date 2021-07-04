@@ -3,6 +3,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+#include "comb.h"
+
 using namespace std;
 
 void comb(int arr[], int n)

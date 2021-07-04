@@ -12,6 +12,7 @@
 #include "quick/quick.h"
 #include "radix/radix.h"
 #include "selection/selection.h"
+#include "shell/shell.h"
 
 using namespace std;
 
@@ -139,6 +140,9 @@ int main()
 			break;
 		case 10:
 			selection_sort(arr, array_length);
+			break;
+		case 11:
+			shell_sort(arr, array_length);
 			break;
 		default:
 			cout << "fatal error: out of range";

@@ -1,5 +1,7 @@
 using namespace std;
 
+#include "merge.h"
+
 void merge(int array[], int lower, int middle, int upper) 
 { 
     	int i, j, k; 
