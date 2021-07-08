@@ -1,4 +1,3 @@
-#include <iostream>
 #include <vector>
 #include <math.h>
 #include <algorithm>
@@ -55,4 +54,6 @@ void bucket(int arr[], int n)
 
 	for (int i = 0; i < n; i++)
 		arr[i] = result[i];
+
+	arr[n - 1] = *max_element(to_sort.begin(), to_sort.end());
 }
