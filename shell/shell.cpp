@@ -2,17 +2,15 @@
 
 void shell_sort(int arr[], int n)
 {
-	for (int gap = n/2; gap > 0; gap /= 2)
+	for (int g = n/2; g > 0; g /= 2)
     	{
-        	for (int i = gap; i < n; i += 1)
+        	for (int i = g; i < n; i += 1)
         	{
-            		int temp = arr[i];
- 
+            		int tmp = arr[i];
 		       	int j;           
-            		for (j = i; j >= gap && arr[j - gap] > temp; j -= gap)
+            		for (j = i; j >= g && arr[j - g] > tmp; j -= g)
                 		arr[j] = arr[j - gap];
-             
-           		 arr[j] = temp;
+           		 arr[j] = tmp;
         	}
     	}
 }
