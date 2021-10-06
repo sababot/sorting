@@ -9,7 +9,7 @@ void shell_sort(int arr[], int n)
             		int tmp = arr[i];
 		       	int j;           
             		for (j = i; j >= g && arr[j - g] > tmp; j -= g)
-                		arr[j] = arr[j - gap];
+                		arr[j] = arr[j - g];
            		 arr[j] = tmp;
         	}
     	}

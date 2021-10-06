@@ -12,12 +12,13 @@ void bucket(int arr[], int n)
 	vector<int> to_sort;
 	vector<vector<int> > dummy;
 	vector<int> result;
+	vector<int> null_vec;
 
 	for (int i = 0; i < n; i++)
 		to_sort.push_back(arr[i]);
 
 	for (int i = 0; i < n + 1; i++)
-		dummy.push_back({});
+		dummy.push_back(null_vec);
 
 	for (int i = 0; i < n; i++)
 	{
